@@ -1,8 +1,10 @@
-import { NavigationContainer } from "@react-navigation/native";
-import { useFonts } from "expo-font";
 import { useCallback, useEffect } from "react";
+import { View, StyleSheet } from "react-native";
 import * as SplashScreen from "expo-splash-screen";
-import { View, Text, StyleSheet } from "react-native";
+import { useFonts } from "expo-font";
+import MealNavigator from "./navigation/MealNavigator";
+import { StatusBar } from "expo-status-bar";
+import Colors from "./constants/Colors";
 
 export default function App() {
 	const [fontsLoaded] = useFonts({
@@ -27,8 +29,9 @@ export default function App() {
 	}
 
 	return (
-		<View style={styles.root} onLayout={onLayoutRootView}>
-			<Text style={styles.hello}>Hello</Text>
+		<View onLayout={onLayoutRootView} style={styles.root}>
+			<MealNavigator />
+			<StatusBar style='dark' />
 		</View>
 	);
 }
@@ -36,11 +39,5 @@ export default function App() {
 const styles = StyleSheet.create({
 	root: {
 		flex: 1,
-		alignItems: "center",
-		justifyContent: "center",
-	},
-	hello: {
-		fontFamily: "Merriweather-Italic",
-		fontSize: 40,
 	},
 });

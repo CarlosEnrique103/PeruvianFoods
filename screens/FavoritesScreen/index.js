@@ -1,9 +1,8 @@
 import { StyleSheet, Text, View } from "react-native";
-import React from "react";
 
 const FavoritesScreen = () => {
 	return (
-		<View styles={styles.screen}>
+		<View style={styles.screen}>
 			<Text>FavoritesScreen</Text>
 		</View>
 	);

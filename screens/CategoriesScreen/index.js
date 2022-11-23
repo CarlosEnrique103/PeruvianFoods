@@ -1,10 +1,17 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import { Button, StyleSheet, Text, View } from "react-native";
+import Colors from "../../constants/Colors";
 
-const CategoriesScreen = () => {
+const CategoriesScreen = ({ navigation, route }) => {
 	return (
-		<View styles={styles.screen}>
-			<Text>CategoriesScreen</Text>
+		<View style={styles.screen}>
+			<Button
+				title='Go Category Screen'
+				onPress={() =>
+					navigation.navigate("CategoryMealScreen", {
+						name: "Italian",
+					})
+				}
+			/>
 		</View>
 	);
 };
@@ -16,5 +23,6 @@ const styles = StyleSheet.create({
 		flex: 1,
 		alignItems: "center",
 		justifyContent: "center",
+		backgroundColor: Colors.secondaryColor,
 	},
 });
