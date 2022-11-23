@@ -1,28 +1,33 @@
-import { Button, StyleSheet, Text, View } from "react-native";
-import Colors from "../../constants/Colors";
+import { FlatList, View } from "react-native";
+import CardCategory from "../../components/UI/CardCategory";
+
+import { CATEGORIES } from "../../data/dummy-data";
+import styles from "./styles";
 
 const CategoriesScreen = ({ navigation, route }) => {
+	const navigateHandler = (name) =>
+		navigation.navigate("CategoryMealScreen", { name });
+
+	const renderItem = ({ item }) => (
+		<CardCategory
+			color={item.color}
+			onNavigateMealCategory={navigateHandler.bind(this, item.name)}
+		>
+			{item.name}
+		</CardCategory>
+	);
+
 	return (
 		<View style={styles.screen}>
-			<Button
-				title='Go Category Screen'
-				onPress={() =>
-					navigation.navigate("CategoryMealScreen", {
-						name: "Italian",
-					})
-				}
+			<FlatList
+				numColumns={2}
+				keyExtractor={(item) => item.id}
+				data={CATEGORIES}
+				renderItem={renderItem}
+				style={styles.listCategories}
 			/>
 		</View>
 	);
 };
 
 export default CategoriesScreen;
-
-const styles = StyleSheet.create({
-	screen: {
-		flex: 1,
-		alignItems: "center",
-		justifyContent: "center",
-		backgroundColor: Colors.secondaryColor,
-	},
-});

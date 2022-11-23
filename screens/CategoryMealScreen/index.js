@@ -1,17 +1,7 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 
 const CategoryMealScreen = ({ route, navigation }) => {
-	const { category } = route.params;
-
-	return (
-		<View style={styles.screen}>
-			<Button
-				title='Go MealDetaiScren'
-				onPress={() => navigation.navigate("MealDetailScreen")}
-			/>
-			<Button title='Go Back' onPress={() => navigation.goBack()} />
-		</View>
-	);
+	return <View style={styles.screen}></View>;
 };
 
 export default CategoryMealScreen;

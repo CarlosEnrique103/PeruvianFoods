@@ -1,12 +1,14 @@
+import Category from "../models/Category";
+
 export const CATEGORIES = [
-	new Category("c1", "Italian", "#f5428d"),
-	new Category("c2", "Quick & Easy", "#f54242"),
-	new Category("c3", "Hamburgers", "#f5a442"),
-	new Category("c4", "German", "#f5d142"),
-	new Category("c5", "Light & Lovely", "#368dff"),
-	new Category("c6", "Exotic", "#41d95d"),
-	new Category("c7", "Breakfast", "#9eecff"),
-	new Category("c8", "Asian", "#b9ffb0"),
-	new Category("c9", "French", "#ffc7ff"),
-	new Category("c10", "Summer", "#47fced"),
+	new Category("c1", "Italian", "#FF9233"),
+	new Category("c2", "Quick & Easy", "#997CD9"),
+	new Category("c3", "Hamburgers", "#FFCA91"),
+	new Category("c4", "German", "#00D3CB"),
+	new Category("c5", "Light & Lovely", "#4CA6D3"),
+	new Category("c6", "Exotic", "#FD9B83"),
+	new Category("c7", "Breakfast", "#8FDD4B"),
+	new Category("c8", "Asian", "#FFB600"),
+	new Category("c9", "French", "#f492e1"),
+	new Category("c10", "Summer", "#fc477d"),
 ];
