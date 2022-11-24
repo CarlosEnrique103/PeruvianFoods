@@ -4,7 +4,6 @@ import * as SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
 import MealNavigator from "./navigation/MealNavigator";
 import { StatusBar } from "expo-status-bar";
-import Colors from "./constants/Colors";
 
 export default function App() {
 	const [fontsLoaded] = useFonts({

@@ -18,12 +18,12 @@ const MealDetailScreen = ({ navigation, route }) => {
 			headerRight: () => (
 				<Pressable onPress={addFavoriteHandler}>
 					<AntDesign
-						name={toggleFav ? "star" : "staro"}
+						name={toggleFav ? "heart" : "hearto"}
 						size={25}
 						color={
 							toggleFav
-								? Colors.favoriteColorEnabled
-								: Colors.favoriteColorDisabled
+								? Colors.favoriteColorActive
+								: Colors.favoriteColorInactive
 						}
 						style={styles.headerFavoriteIcon}
 					/>

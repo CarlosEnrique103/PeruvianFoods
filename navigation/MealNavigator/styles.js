@@ -13,6 +13,13 @@ const styles = StyleSheet.create({
 		fontSize: 25,
 		fontFamily: "Dancing",
 	},
+	tabBarStyle: {
+		backgroundColor: Colors.secondaryColor,
+	},
+	tabBarLabelStyle: {
+		fontSize: 12,
+		fontFamily: "Merriweather-Regular",
+	},
 });
 
 export default styles;

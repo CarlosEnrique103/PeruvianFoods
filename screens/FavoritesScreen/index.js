@@ -1,4 +1,5 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
+import styles from "./styles";
 
 const FavoritesScreen = () => {
 	return (
@@ -9,11 +10,3 @@ const FavoritesScreen = () => {
 };
 
 export default FavoritesScreen;
-
-const styles = StyleSheet.create({
-	screen: {
-		flex: 1,
-		alignItems: "center",
-		justifyContent: "center",
-	},
-});
