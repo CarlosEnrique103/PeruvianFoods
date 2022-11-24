@@ -12,8 +12,12 @@
 ## 🛠 Installing
 
 ```
-> yarn
-> yarn start
+$ yarn
+$ yarn start
 ```
+
+## 🏞️ Preview
+
+![plot](./assets/screen.png)
 
 ### Happy Coding! ⚡️
