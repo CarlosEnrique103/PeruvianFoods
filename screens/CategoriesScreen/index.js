@@ -1,17 +1,16 @@
 import { FlatList, View } from "react-native";
-import CardCategory from "../../components/UI/CardCategory";
-
+import CardCategory from "../../components/CardCategory";
 import { CATEGORIES } from "../../data/dummy-data";
 import styles from "./styles";
 
 const CategoriesScreen = ({ navigation, route }) => {
-	const navigateHandler = (name) =>
-		navigation.navigate("CategoryMealScreen", { name });
+	const navigateHandler = ({ id, name }) =>
+		navigation.navigate("CategoryMealScreen", { id, name });
 
-	const renderItem = ({ item }) => (
+	const renderCategoryItem = ({ item }) => (
 		<CardCategory
 			color={item.color}
-			onNavigateMealCategory={navigateHandler.bind(this, item.name)}
+			onNavigateMealCategory={navigateHandler.bind(this, item)}
 		>
 			{item.name}
 		</CardCategory>
@@ -23,7 +22,7 @@ const CategoriesScreen = ({ navigation, route }) => {
 				numColumns={2}
 				keyExtractor={(item) => item.id}
 				data={CATEGORIES}
-				renderItem={renderItem}
+				renderItem={renderCategoryItem}
 				style={styles.listCategories}
 			/>
 		</View>

@@ -17,6 +17,7 @@ const MealNavigator = () => {
 					headerStyle: styles.headerStyle,
 					headerTintColor: styles.headerTintColor,
 					headerTitleStyle: styles.headerTitleStyle,
+					headerBackTitle: "",
 				})}
 			>
 				<Stack.Screen name='CategoriesScreen' component={CategoriesScreen} />
