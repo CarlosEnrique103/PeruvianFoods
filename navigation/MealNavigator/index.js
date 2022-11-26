@@ -70,6 +70,10 @@ const MealsTabNavigator = () => {
 						) : (
 							<AntDesign name='hearto' size={24} color={color} />
 						),
+					headerShown: true,
+					headerStyle: styles.headerStyle,
+					headerTintColor: styles.headerTintColor,
+					headerTitleStyle: styles.headerTitleStyle,
 				}}
 			/>
 		</Tab.Navigator>

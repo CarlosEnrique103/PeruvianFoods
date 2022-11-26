@@ -1,5 +1,5 @@
 import { FlatList, Text, View } from "react-native";
-import MealItem from "../../components/MeatlItem";
+import MealItem from "../../components/MealItem";
 import { MEALS } from "../../data/dummy-data";
 import styles from "./styles";
 

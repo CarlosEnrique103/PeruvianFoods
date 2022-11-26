@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
 	drawerFooter: {
 		flex: 1,
 		paddingLeft: 20,
+		backgroundColor: Colors.secondaryColor,
 		borderTopColor: Colors.primaryColor,
 		borderTopWidth: 1,
 		justifyContent: "flex-start",

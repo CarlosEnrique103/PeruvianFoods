@@ -1,4 +1,4 @@
-import { Text, View, Pressable, SafeAreaView, Image } from "react-native";
+import { Text, View, Pressable, Image } from "react-native";
 import styles from "./styles";
 import peru from "./../../../assets/peru.png";
 import { AntDesign, EvilIcons } from "@expo/vector-icons";
