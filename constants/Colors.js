@@ -7,6 +7,7 @@ const Colors = {
 	whiteColor: "#fff",
 	favoriteColorActive: "#fe0751",
 	favoriteColorInactive: "#878793",
+	blackColor: "#000",
 };
 
 export default Colors;

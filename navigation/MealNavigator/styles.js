@@ -4,8 +4,6 @@ import Colors from "../../constants/Colors";
 const styles = StyleSheet.create({
 	headerStyle: {
 		backgroundColor: Colors.secondaryColor,
-		borderWidth: 10,
-		borderColor: "red",
 	},
 	headerTintColor: Colors.headerStackTitle,
 	headerTitleStyle: {

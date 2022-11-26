@@ -1,6 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
+import { useEffect } from "react";
+import { Text, View } from "react-native";
+import styles from "./styles";
 
-const FiltersScreen = () => {
+const FiltersScreen = ({ navigation, root }) => {
 	return (
 		<View style={styles.screen}>
 			<Text>FiltersScreen</Text>
@@ -9,11 +11,3 @@ const FiltersScreen = () => {
 };
 
 export default FiltersScreen;
-
-const styles = StyleSheet.create({
-	screen: {
-		flex: 1,
-		alignItems: "center",
-		justifyContent: "center",
-	},
-});
